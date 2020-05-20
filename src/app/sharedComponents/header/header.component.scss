@@ -1,9 +1,17 @@
 .header {
     background-color:#9E9E9E;
+    justify-content: space-between;
     .anchor {
         align-self: flex-start;
+        margin-right: 16px;
     }
     .nav-items {
         align-self: flex-end;
+        .item {
+            margin-right: 16px;
+            &:last-of-type {
+                margin-right: 0px;
+            }
+        }
     }
 }
