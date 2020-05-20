@@ -1,5 +1,6 @@
 .app {
     display: flex;
+    height: 100%;
     .row {
         display: flex;
         -webkit-flex-direction: row;
@@ -19,9 +20,9 @@
         }
     }
     .block {
-        padding: 8px;
-        &--header {
-            padding: 16px 24px;
-        }
+        padding: 16px 24px;
+        // &--header {
+        //     padding: 16px 24px;
+        // }
     }
 }
