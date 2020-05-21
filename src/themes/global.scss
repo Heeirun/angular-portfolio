@@ -21,14 +21,12 @@
     }
     .block {
         padding: 16px 24px;
-        // &--header {
-        //     padding: 16px 24px;
-        // }
     }
 
     .page {
         padding: 16px 24px;
         min-height: 100%;
         height: auto;
+        scroll-margin-top: 4rem;
     }
 }
