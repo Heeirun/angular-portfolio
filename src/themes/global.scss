@@ -1,6 +1,24 @@
 .app {
     display: flex;
     height: 100%;
+
+    .heading-1 {
+        font-weight: thin;
+        font-size: 34px;
+        margin-bottom: 8px;
+    }
+
+    .heading-2 {
+        font-weight: thin;
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+    .heading-3 {
+        font-weight: thin;
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
     .row {
         display: flex;
         -webkit-flex-direction: row;
@@ -28,5 +46,32 @@
         min-height: 100%;
         height: auto;
         scroll-margin-top: 4rem;
+        background-color: #EEEEEE;
+        border: 1px solid black;
+        .about-me {
+            width: 100%;
+            align-items: center;
+            background-repeat: no-repeat;
+            background-image: url('../assets/favicon_io/rsz_heeirun.jpg');
+            background-size: 100%;
+            .info-container {
+                align-self: flex-end;
+                // background-color: #BDBDBD;
+                margin-right: 24px;
+                padding: 0px;
+                margin-top: 32px;
+                .info {
+                    background-color: #EEEEEE;
+                    color: black;
+                    // .uni-info {
+                    //     size: 10;
+                    // }
+                }
+            }
+        }
+
+        &--about-me {
+            padding: 16px 0px;
+        }
     }
 }

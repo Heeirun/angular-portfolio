@@ -1,7 +1,30 @@
 <div class="app">
     <div class="landing column">
         <app-header class="app-header" (Navigate)="navigateTo($event)"></app-header>
-        <div class="page row" #aboutMe></div>
+        <div class="page page--about-me row" #aboutMe>
+            <!-- <img src="../../assets/favicon_io/rsz_heeirun.jpg" style="max-height: 100%; max-width: 100%;"> -->
+            <div class="about-me column">
+                <div class="block row"></div>
+                <div class="block row"></div>
+                <div class="block info-container row">
+                    <div class="block info column">
+                        <span class="heading-1">Heeirun Jayakumar</span>
+                        <span class="heading-2">Software Engineer, Full Stack</span>
+                        <span class="heading-3"> 🎓 University of Wisconsin-Madison</span>
+
+                        <div class="link-info row">
+                            <img src="../../assets/favicon_io/iconmonstr-linkedin-3.svg">
+                            <span class="heading-3">LinkedIn</span>
+
+                            <span class="heading-3">Github</span>
+                            <span class="heading-3">Resume</span>
+                            <span class="heading-3">Devpost</span>
+                        </div>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="page row" #work>Work Experience</div>
         <div class="page row" #portfolio>Portfolio</div>
         <div class="page row" #hobbies>Hobbies</div>
