@@ -1,22 +1,38 @@
 .app {
     display: flex;
     height: 100%;
-
+    font-family: sharp sans,Arial,sans-serif;
+    line-height: calc(1em + 8px);
     .heading-1 {
         font-weight: thin;
         font-size: 34px;
-        margin-bottom: 8px;
+        &--title {
+            margin-bottom: 8px;
+        }
+        &--links {
+            margin-right: 8px;
+        }
     }
 
     .heading-2 {
         font-weight: thin;
         font-size: 20px;
-        margin-bottom: 8px;
+        &--title {
+            margin-bottom: 16px;
+        }
+        &--links {
+            margin-right: 8px;
+        }
     }
     .heading-3 {
         font-weight: thin;
         font-size: 16px;
-        margin-bottom: 8px;
+        &--title {
+            margin-bottom: 8px;
+        }
+        &--links {
+            margin-right: 8px;
+        }
     }
 
     .row {
@@ -63,8 +79,8 @@
                 .info {
                     background-color: #EEEEEE;
                     color: black;
-                    // .uni-info {
-                    //     size: 10;
+                    // .linkedin {
+                    //     color: blue;
                     // }
                 }
             }
