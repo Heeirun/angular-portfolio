@@ -1,5 +1,5 @@
 .header {
-    background-color:#9E9E9E;
+    background-color:#F5F5F5;
     justify-content: space-between;
     position: fixed;
     top: 0;
@@ -28,15 +28,20 @@
             align-self: center;
             height: 32px;
             margin-right: 16px;
+            border-radius: 25px;
+            color: #424242;
             &:last-of-type {
                 margin-right: 0px;
             }
             button {
                 height: 32px;
-                background-color: #757575;
-                color: #FAFAFA;
-                font-size: 16px;
-                font-family: "Lucida Console", Monaco, monospace;
+                background-color: #F5F5F5;
+                font: 600 18px ,Arial,sans-serif;
+                letter-spacing: .025em;
+                border: none;
+            }
+            button:hover {
+                background-color: #EEEEEE;  
             }
         }
     }
