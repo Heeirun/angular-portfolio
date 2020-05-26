@@ -82,6 +82,20 @@
                     // .linkedin {
                     //     color: blue;
                     // }
+                    .linkedin{
+                        justify-self: center;
+                    }
+                    a:link {
+                        color: black;
+                        text-decoration: none;
+                      }
+                    a:hover {
+                        text-decoration: underline;
+                    }
+                    a:visited {
+                        text-decoration: none;
+                        color: black;
+                    }
                 }
             }
         }
