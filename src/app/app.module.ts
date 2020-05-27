@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HeaderComponent } from './sharedComponents/header/header.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { MatIconModule } from '@angular/material/icon';
     BrowserAnimationsModule,
     AppRoutingModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatCardModule
   ],
   exports: [AppRoutingModule],
   providers: [],

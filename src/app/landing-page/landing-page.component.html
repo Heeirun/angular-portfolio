@@ -1,13 +1,13 @@
-<div class="app">
+<div class="app" *ngIf="!sizeChecker.isMobileResolution; else mobileContainer">
     <div class="landing column">
-        <app-header class="app-header" (Navigate)="navigateTo($event)"></app-header>
+        <div class="header-container row">
+            <app-header class="app-header" (Navigate)="navigateTo($event)"></app-header>
+        </div>
         <div class="page page--about-me row" #aboutMe>
             <!-- <img src="../../assets/favicon_io/rsz_heeirun.jpg" style="max-height: 100%; max-width: 100%;"> -->
             <div class="about-me column">
-                <div class="block row"></div>
-                <div class="block row"></div>
                 <div class="block info-container row">
-                    <div class="block info column">
+                    <mat-card class="card card--landing column">
                         <span class="heading-1 heading-1--title">Heeirun Jayakumar</span>
                         <span class="heading-2 heading-2--title">Software Engineer, Full Stack</span>
                         <span class="heading-3 heading-3--title"> 👨🏽‍💻 Software Engineering Intern @ Eatstreet Inc.</span>
@@ -27,13 +27,43 @@
                                 <span>Github</span>
                             </a>
                         </div>
-                        <span></span>
-                    </div>
+                    </mat-card>
                 </div>
             </div>
         </div>
-        <div class="page row" #work>Work Experience</div>
+        <div class="page page--work row" #work>
+            <div class="work column">
+              <div class="title row">
+                <span class="heading-2 heading-2--page"> Work Experience</span>
+              </div>
+              <div class="block"></div>
+              <div class="block"></div>
+              <div class="block card-container row">
+                  <mat-card class="card column">
+                      <img mat-card-image src="../../assets/work/eatstreet.jpg">
+                      <mat-card-header class="column">
+                          <span class="heading-2">Software Engineering Intern</span>
+                          <span class="heading-3 heading-3--title">Eatstreet, Driver Team</span>
+                      </mat-card-header>
+                  </mat-card>
+                  <mat-card class="card column">
+                      <img mat-card-image src="../../assets/work/schneider.jpg">
+                      <span class="heading-2">Software Engineering Intern</span>
+                      <span class="heading-3 heading-3--title">Schneider National, Innovation Team</span>
+                  </mat-card>
+                  <mat-card class="card column">
+                      <img mat-card-image src="../../assets/work/qbe.jpg">
+                      <span class="heading-2">Software Engineering Intern</span>
+                      <span class="heading-3 heading-3--title">QBE North America, Innovation Team</span>
+                  </mat-card>
+              </div>
+            </div>
+        </div>
         <div class="page row" #portfolio>Portfolio</div>
         <div class="page row" #hobbies>Hobbies</div>
     </div>
 </div>
+  
+<ng-template #mobileContainer>
+    Mobile!
+</ng-template>

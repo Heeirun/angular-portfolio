@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
+import { SizeCheckerService } from '../services/size-checker.service';
 
 @Component({
   selector: 'app-landing-page',
@@ -10,8 +11,14 @@ export class LandingPageComponent implements OnInit {
   @ViewChild("work", { static: false }) work;
   @ViewChild("portfolio", { static: false }) portfolio;
   @ViewChild("hobbies", { static: false }) hobbies;
-  
-  constructor() { }
+
+  public isMobileResolution: boolean;
+   
+  constructor(
+    public sizeChecker: SizeCheckerService,
+  ) { 
+    // this.isMobileResolution = this.sizeChecker.getIsMobileResolution();
+  }
 
   ngOnInit(): void {
   }
