@@ -9,6 +9,7 @@ import { HeaderComponent } from './sharedComponents/header/header.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { MatCardModule } from '@angular/material/card';
     AppRoutingModule,
     MatButtonModule,
     MatIconModule,
-    MatCardModule
+    MatCardModule,
+    MatExpansionModule
   ],
   exports: [AppRoutingModule],
   providers: [],

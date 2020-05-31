@@ -12,7 +12,8 @@ export class SizeCheckerService {
     private breakpointObserver: BreakpointObserver
   ) {
     breakpointObserver.observe([
-      '(max-width: 1120px)'
+      // '(max-width: 1120px)'
+      '(max-width: 800px)'
         ]).subscribe(result => {
           if (result.matches) {
             this.isMobileResolution = true
