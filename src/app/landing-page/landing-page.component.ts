@@ -10,7 +10,7 @@ export class LandingPageComponent implements OnInit {
   @ViewChild("aboutMe", { static: false }) aboutMe;
   @ViewChild("work", { static: false }) work;
   @ViewChild("portfolio", { static: false }) portfolio;
-  @ViewChild("hobbies", { static: false }) hobbies;
+  @ViewChild("interests", { static: false }) interests;
 
   public isMobileResolution: boolean;
    
