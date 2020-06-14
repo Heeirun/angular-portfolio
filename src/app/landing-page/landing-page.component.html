@@ -1,20 +1,19 @@
 <div class="app" *ngIf="!sizeChecker.isMobileResolution; else mobileContainer">
     <div class="landing column">
-        <div class="header-container row">
+        <div class="row">
             <app-header class="app-header" (Navigate)="navigateTo($event)"></app-header>
         </div>
-        <div class="page page--about-me row" #aboutMe>
-            <!-- <img src="../../assets/favicon_io/rsz_heeirun.jpg" style="max-height: 100%; max-width: 100%;"> -->
+        <div class="page page--start row" #aboutMe>
             <div class="about-me column">
                 <div class="block info-container row">
-                    <mat-card class="card card--landing column">
+                    <mat-card class="card card--about-me column">
                         <span class="heading-1 heading-1--title">Heeirun Jayakumar</span>
                         <span class="heading-2 heading-2--title">Software Engineer, Full Stack</span>
                         <span class="heading-3 heading-3--title"> 👨🏽‍💻 Software Engineering Intern @ Eatstreet Inc.</span>
                         <span class="heading-3 heading-3--title"> 🎓 University of Wisconsin-Madison</span>
 
-                        <div class="link-info row">
-                            <a href="https://www.google.com/" class="heading-3 heading-3--links" target="_blank" rel="noopener noreferrer">
+                        <div class="row">
+                            <a href="{{resumeUrl}}" class="heading-3 heading-3--links" target="_blank" rel="noopener noreferrer">
                                 <img class="resume" src="../../assets/favicon_io/resume.svg">
                                 <span>Resume</span>
                             </a>
@@ -31,10 +30,10 @@
                 </div>
             </div>
         </div>
-        <div class="page page--work row" #work>
-            <div class="work column">
+        <div class="page page--growable row" #work>
+            <div class="sub-page column">
               <div class="block"></div>
-              <div class="title row">
+              <div class="page-title row">
                 <span class="heading-2 heading-2--page"> Work Experience</span>
               </div>
               <div class="block"></div>
@@ -91,10 +90,10 @@
               </div>
             </div>
         </div>
-        <div class="page page--portfolio row" #portfolio>
-            <div class="portfolio column">
+        <div class="page page--growable row" #portfolio>
+            <div class="sub-page column">
                 <div class="block"></div>
-                <div class="title row">
+                <div class="page-title row">
                     <span class="heading-2 heading-2--page">Portfolio</span>
                 </div>
                 <div class="block"></div>
@@ -158,10 +157,10 @@
                 </div>
             </div>
         </div>
-        <div class="page page--interests row" #interests>
-            <div class="interests column">
+        <div class="page page--growable row" #interests>
+            <div class="sub-page column">
                 <div class="block"></div>
-                <div class="title row">
+                <div class="page-title row">
                     <span class="heading-2 heading-2--page">Interests</span>
                 </div>
                 <div class="block"></div>
