@@ -20,14 +20,12 @@ export class LandingPageComponent implements OnInit {
     public sizeChecker: SizeCheckerService,
   ) { 
     this.resumeUrl = environment.resumeUrl;
-    console.log(this.resumeUrl);
   }
 
   ngOnInit(): void {
   }
 
   navigateTo(element: string) {
-    console.log(element);
     this[element].nativeElement.scrollIntoView({ behavior: "smooth" });
   }
 
