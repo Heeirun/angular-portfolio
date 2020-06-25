@@ -10,11 +10,77 @@
     0 3px 5px -1px rgba(0,0,0,.2), 
     0 6px 10px 0 rgba(0,0,0,.14), 
     0 1px 18px 0 rgba(0,0,0,.12);
+    // opacity: 0.5;
+    // .dropdown {
+    //     position: absolute;
+    //     &--overlay {
+    //         display: block;
+    //         position: fixed;
+    //         top: 0;
+    //         bottom: 0;
+    //         left: 0;
+    //         right: 0;
+    //         height: 100%;
+    //         background-color: black;
+    //         opacity: 0;
+    //         transition: opacity .2s ease-in-out;
+    //         cursor: pointer;
+    //     }
+    //     &__content {
+    //         position: fixed;
+    //         bottom: -100%;
+    //         transition: bottom .6s ease-in-out;
+    //         width: 100%;
+    //         z-index: 100;
+    //     }
+    //     &__active {
+    //         .dropdown__overlay {
+    //             opacity: .6s;
+    //             z-index: 10;
+    //         }
+    //         .dropdown_content {
+    //             bottom: 0;
+    //         }
+    //     }
+    // }
+    #dropdown {
+        position: fixed; /* Sit on top of the page content */
+        display: none; /* Hidden by default */
+        width: 100%; /* Full width (cover the whole page) */
+        height: 100%; /* Full height (cover the whole page) */
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+        z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+        cursor: pointer; /* Add a pointer on hover */
+      }
+    #text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 50px;
+        color: white;
+        transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+    }
+    .hamburger {
+        position: relative;
+        // display: inline-block;
+        opacity: 0.7;
+        outline: none;
+    }
+
     .anchor {
         align-self: flex-start;
         margin-right: 16px;
         height: 32px;
         justify-self: center;
+        &--mobile {
+            justify-self: center;
+            align-self: center;
+        }
         img {
             box-shadow: 
             0 3px 5px -1px rgba(0,0,0,.2), 

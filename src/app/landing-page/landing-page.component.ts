@@ -13,7 +13,6 @@ export class LandingPageComponent implements OnInit {
   @ViewChild("portfolio", { static: false }) portfolio;
   @ViewChild("interests", { static: false }) interests;
 
-  public isMobileResolution: boolean;
   public resumeUrl: string;
    
   constructor(

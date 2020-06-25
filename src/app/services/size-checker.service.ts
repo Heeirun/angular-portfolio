@@ -18,7 +18,6 @@ export class SizeCheckerService {
           if (result.matches) {
             this.isMobileResolution = true
           } else {
-            // if necessary:
             this.isMobileResolution = false;
           }
         });

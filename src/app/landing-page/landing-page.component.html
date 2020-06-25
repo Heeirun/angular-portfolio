@@ -1,7 +1,7 @@
 <div class="app" *ngIf="!sizeChecker.isMobileResolution; else mobileContainer">
     <div class="landing column">
         <div class="row">
-            <app-header class="app-header" (Navigate)="navigateTo($event)"></app-header>
+            <app-header [isMobile]="sizeChecker.isMobileResolution" class="app-header" (Navigate)="navigateTo($event)"></app-header>
         </div>
         <div class="page page--start row" #aboutMe>
             <div class="about-me column">
@@ -239,5 +239,11 @@
 </div>
   
 <ng-template #mobileContainer>
-    Mobile!
+    <div class="app">
+        <div class="landing column">
+            <div class="row">
+                <app-header [isMobile]="sizeChecker.isMobileResolution" (Navigate)="navigateTo($event)"></app-header>
+            </div>
+        </div>
+    </div>
 </ng-template>

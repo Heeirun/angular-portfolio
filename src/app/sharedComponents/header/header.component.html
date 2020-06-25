@@ -1,4 +1,4 @@
-<div class="header block row">
+<div class="header block row" *ngIf="!isMobile; else mobileContainer">
     <div class="anchor col" (click)="navigateTo('aboutMe')">
         <img src="../../../assets/favicon_io/favicon-32x32.png">
     </div>
@@ -19,3 +19,21 @@
         </div>
     </div>
 </div>
+
+<ng-template #mobileContainer>
+    <div class="header block row" id="header">
+        <div class="hamburger" (click)="showMenu()">
+            <button>
+                <img src="../../../assets/favicon_io/icons8-menu-32.png">
+            </button>
+        </div>
+        <div class="anchor anchor--mobile col" (click)="navigateTo('aboutMe')">
+            <img src="../../../assets/favicon_io/favicon-32x32.png">
+        </div>
+        <div id="dropdown" (click)="hideMenu()">
+            <div id="text">Hi</div>
+        </div>
+        <div class="header-padding"></div>
+    </div>
+</ng-template>
+
