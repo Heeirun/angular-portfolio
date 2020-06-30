@@ -21,7 +21,7 @@
 </div>
 
 <ng-template #mobileContainer>
-    <div class="header block row" id="header">
+    <div class="header header--mobile block row" id="header">
         <div class="hamburger" (click)="showMenu()">
             <button>
                 <img src="../../../assets/favicon_io/icons8-menu-32.png">
@@ -31,9 +31,12 @@
             <img src="../../../assets/favicon_io/favicon-32x32.png">
         </div>
         <div id="dropdown" (click)="hideMenu()">
-            <div id="text">Hi</div>
+            <div id="text-1" (click)="navigateTo('aboutMe')">About Me</div>
+            <div id="text-2" (click)="navigateTo('work')">Work Experience</div>
+            <div id="text-3" (click)="navigateTo('portfolio')">Portfolio</div>
+            <div id="text-4" (click)="navigateTo('interests')">Interests</div>
         </div>
-        <div class="header-padding"></div>
+        <!-- <div class="header-padding"></div> -->
     </div>
 </ng-template>
 

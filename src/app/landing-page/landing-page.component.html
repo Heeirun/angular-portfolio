@@ -211,7 +211,7 @@
                             <div class="skills column">
                                 <p>⦿ Networking ⦿ Socializing </p>
                                 <p>⦿ Reading ⦿ Learning </p>
-                                <p>⦿ Piano </p>
+                                <p>⦿ Living </p>
                             </div>
                         </mat-card-content>
                     </mat-card>
@@ -243,6 +243,236 @@
         <div class="landing column">
             <div class="row">
                 <app-header [isMobile]="sizeChecker.isMobileResolution" (Navigate)="navigateTo($event)"></app-header>
+            </div>
+            <div class="page page--start row" #aboutMe>
+                <div class="about-me about-me--mobile column">
+                    <div class="info-container--mobile row">
+                        <mat-card class="card card--about-me card--mobile--about-me column">
+                            <span class="heading-1 heading-1--title">Heeirun Jayakumar</span>
+                            <span class="heading-2 heading-2--title">Software Engineer, Full Stack</span>
+                            <span class="heading-3 heading-3--title"> 👨🏽‍💻 Software Engineering Intern @ Eatstreet Inc.</span>
+                            <span class="heading-3 heading-3--title"> 🎓 University of Wisconsin-Madison</span>
+    
+                            <div class="row">
+                                <a href="{{resumeUrl}}" class="heading-3 heading-3--links" target="_blank" rel="noopener noreferrer">
+                                    <img src="../../assets/favicon_io/resume.svg">
+                                    <span>Resume</span>
+                                </a>
+                                <a href="https://www.linkedin.com/in/heeirun/" class="heading-3 heading-3--links linkedin" target="_blank" rel="noopener noreferrer">
+                                    <img src="../../assets/favicon_io/linkedin.svg">
+                                    <span>LinkedIn</span>
+                                </a>
+                                <a href="https://github.com/Heeirun" class="heading-3 heading-3--links" target="_blank" rel="noopener noreferrer">
+                                    <img src="../../assets/favicon_io/github.svg">
+                                    <span>Github</span>
+                                </a>
+                            </div>
+                        </mat-card>
+                    </div>
+                </div>
+                about me
+            </div>
+            <div class="page page--growable page--mobile row" #work>
+                <div class="sub-page column">
+                    <div class="block"></div>
+                    <div class="page-title row">
+                      <span class="heading-2 heading-2--page"> Work Experience</span>
+                    </div>
+                    <div class="block card-container column">
+                        <mat-card class="card card--mobile column">
+                            <div>
+                                <img mat-card-image src="../../assets/work/eatstreet.jpg">
+                            </div>
+                            <mat-card-header class="column">
+                                <span class="heading-2">Software Engineering Intern</span>
+                                <a href="https://eatstreet.com/" class="heading-3 heading-3--links" target="_blank" rel="noopener noreferrer">
+                                  <span>Eatstreet, Driver Team </span>
+                                </a>
+                            </mat-card-header>
+                            <mat-card-content>
+                              <p>
+                                  ●	Engineered and deployed new features such as optimizing driver pickup and drop-off flow to support order volume growth of 73% YoY in Q1 and non-contact delivery for COVID-19 compliance using Ruby on Rails and Angular 8 + Ionic. 
+                              </p>
+                              <p>
+                                  ●	Led design, development and deployment of the new driver on-boarding app written in Angular 8 with CircleCI integration. Deployed to a S3 bucket integrated with Cloudfront for performance and Route 53 for DNS routing.
+                              </p>
+                            </mat-card-content>
+                        </mat-card>
+                        <mat-card class="card card--mobile column">
+                            <div>
+                              <img mat-card-image src="../../assets/work/schneider.jpg">
+                            </div>
+                            <mat-card-header class="column">
+                              <span class="heading-2">Software Engineering Intern</span>
+                              <a href="https://schneider.com/" class="heading-3 heading-3--links" target="_blank" rel="noopener noreferrer">
+                                  <span>Schneider National, Innovation Team </span>
+                              </a>
+                            </mat-card-header>
+                            <mat-card-content>
+                              <p>
+                                  ●	Led design, development and deployment effort for a full stack web application. The app crowdsourced innovative ideas internally within Schneider built using React, Node, MS SQL Server and deployed to production with Docker. 
+                              </p>
+                              <p>
+                                  ●	Engineered a virtual voice assistant using Dialogflow, Web Speech API and Socket.io to increase driver satisfaction, safety and productivity. 
+                              </p>
+                            </mat-card-content>
+                        </mat-card>
+                        <mat-card class="card card--mobile column">
+                            <mat-card-header class="column">
+                                <div>
+                                    <img mat-card-image src="../../assets/work/qbe.jpg">
+                                </div>
+                              <span class="heading-2">Software Engineering Intern</span>
+                              <a href="https://www.qbe.com/us" class="heading-3 heading-3--links" target="_blank" rel="noopener noreferrer">
+                                <span>QBE North America, Innovation Team </span>
+                            </a>
+                              <span class="heading-3 heading-3--title"></span>
+                            </mat-card-header>
+                            <mat-card-content>
+                                <p>
+                                    ●	Led design, development and deployment of an end to end data pipeline for collection and visualization of chat bot data using Python scripts, Azure Tables, Azure Logic Apps, Docker and Power BI.</p>
+                                <p>
+                                    ●	Deployed Azure Web Apps and integrated them with Azure Cognitive Services such as LUIS and QNA Maker to implement Natural Language Processing (NLP) functionality in a production environment.</p>
+                              </mat-card-content>
+                          </mat-card>
+                    </div>
+                </div>
+            </div>
+            <div class="page page--growable page--mobile row" #portfolio>
+                <div class="sub-page column">
+                    <div class="block"></div>
+                    <div class="page-title row">
+                        <span class="heading-2 heading-2--page">Portfolio</span>
+                    </div>
+                    <div class="block card-container column">
+                        <mat-card class="card card--mobile column">
+                            <mat-card-header class="column">
+                                <div>
+                                    <img mat-card-image src="../../assets/portfolio/visualEyes.jpg">
+                                </div>
+                              <a href="https://www.facebook.com/VisualEyesArt/" class="heading-1 heading-1--links" target="_blank" rel="noopener noreferrer">
+                                <span>VisualEyes</span>
+                              </a>
+                              <span class="heading-2">Software Engineer</span>
+                              <span class="heading-3 heading-3--title">gAlpha Startup Accelerator</span>
+                            </mat-card-header>
+                            <mat-card-content>
+                                <p>●	Founded an Augmented Reality (AR) start-up focused on interactive display of information in the AR space as part of a gAlpha (gener8tor backed) early stage start-up accelerator program.</p>
+                                <p>●	Engineered the MongoDB database with the use of Mongoose models and deployed it on Azure.</p>
+                            </mat-card-content>
+                        </mat-card>
+                        <mat-card class="card card--mobile column">
+                            <mat-card-header class="column">
+                                <div>
+                                    <img mat-card-image src="../../assets/portfolio/footprintr.jpg">
+                                </div>
+                                <a href="https://devpost.com/software/footprintr" class="heading-1 heading-1--links" target="_blank" rel="noopener noreferrer">
+                                    <span>FootPrintr</span>
+                                </a>
+                                <span class="heading-2">Tech Lead</span>
+                                <span class="heading-3 heading-3--title">MadHacks 2019</span>
+                            </mat-card-header>
+                            <mat-card-content>
+                                <p>●	Lead a team of 5 to tackle environmental sustainability by empowering consumers with data and insights on how environmentally friendly a company is.</p>
+                                <p>●	Designed, developed and deployed a full-stack webapp integrated with a machine learning service to rank companies using a custom rating algorithm based on how eco-friendly they are.</p>
+                            </mat-card-content>
+                        </mat-card>
+                        <mat-card class="card card--mobile column">
+                            <mat-card-header class="column">
+                                <div>
+                                    <img mat-card-image src="../../assets/portfolio/headlines.jpg">
+                                </div>
+                                <a href="https://devpost.com/software/headlines-w7jrhm" class="heading-1 heading-1--links" target="_blank" rel="noopener noreferrer">
+                                    <span>Headlines</span>
+                                </a>
+                                <span class="heading-2">Software Engineer</span>
+                                <span class="heading-3 heading-3--title">MadHacks 2018</span>
+                            </mat-card-header>
+                            <mat-card-content>
+                                <p>●	Created a web app during MadHacks 2018 which scraped news articles and tweets to analyse market sentiment on big companies and visualized that data on a graph compared to the company’s stock price.</p>
+                                <p>●	Scraped top tweets from companies using Python and saved them to a PostgreSQL database deployed on AWS.</p>
+                            </mat-card-content>
+                        </mat-card>
+                        <mat-card class="card card--mobile column">
+                            <mat-card-header class="column">
+                                <div>
+                                    <img mat-card-image src="../../assets/portfolio/original.jpg">
+                                </div>
+                                <a href="https://devpost.com/software/pills-icpk1q" class="heading-1 heading-1--links" target="_blank" rel="noopener noreferrer">
+                                    <span>Pills</span>
+                                </a>
+                                <span class="heading-2">Software Engineer</span>
+                                <span class="heading-3 heading-3--title">HackIllinois 2018</span>
+                            </mat-card-header>
+                            <mat-card-content>
+                                <p>●	 Developed a mobile app which automatically sets reminders on the Calendar app(iOS) based on a picture of medication prescription.</p>
+                                <p>●	Assisted in frontend development using Swift and User Acceptance Testing.</p>
+                            </mat-card-content>
+                        </mat-card>
+                    </div>
+                </div>
+            </div>
+            <div class="page page--growable page--mobile row" #interests>
+                <div class="sub-page column">
+                    <div class="block"></div>
+                    <div class="page-title row">
+                        <span class="heading-2 heading-2--page">Interests</span>
+                    </div>
+                    <div class="block card-container column">
+                        <mat-card class="card card--mobile column">
+                            <div>
+                                <img mat-card-image src="../../assets/interests/left.jpg">
+                            </div>
+                            <span class="heading-2">Health</span>
+                            <span class="heading-3 heading-3--title">Working out - Eating Healthy - Sports</span>
+                            <mat-card-content>
+                                <p>
+                                    ●	I prioritize keeping healthy both physically and mentally by balancing working out, eating habits and mental state.
+                                </p>
+                                <div class="skills column">
+                                    <p>⦿ Bodybuilding ⦿ Powerlifting </p>
+                                    <p>⦿ Meal Prepping ⦿ Cooking </p>
+                                    <p>⦿ Soccer ⦿ Volleyball </p>
+                                    <p>⦿ Pickup Sports </p>
+                                </div>
+                            </mat-card-content>
+                        </mat-card>
+                        <mat-card class="card card--mobile column">
+                            <div>
+                                <img mat-card-image src="../../assets/interests/center.JPG">
+                            </div>
+                            <span class="heading-2">Personal Growth</span>
+                            <span class="heading-3 heading-3--title">Learning - Experiences - Socializing</span>
+                            <mat-card-content>
+                                <p>
+                                    ●	I cultivate a growth mindset by learning and experiencing new things not only on my own but when I socialize with people.
+                                </p>
+                                <div class="skills column">
+                                    <p>⦿ Networking ⦿ Socializing </p>
+                                    <p>⦿ Reading ⦿ Learning </p>
+                                    <p>⦿ Living </p>
+                                </div>
+                            </mat-card-content>
+                        </mat-card>
+                        <mat-card class="card card--mobile column">
+                            <div>
+                                <img mat-card-image src="../../assets/interests/right.jpg">
+                            </div>
+                            <span class="heading-2">Solving Problems</span>
+                            <span class="heading-3 heading-3--title">Consulting - Startups - Business</span>
+                            <mat-card-content>
+                                <p>
+                                    ●	I love solving problems for people and businesses and would love to listen to your problems and collaborate on solutions. 
+                                </p>
+                                <div class="skills column">
+                                    <p>⦿ Tech Consulting ⦿ Use Case Creation </p>
+                                    <p>⦿ MVP Building ⦿ Product Planning</p>
+                                    <p>⦿ Cost Estimation </p>
+                                </div>
+                            </mat-card-content>
+                        </mat-card>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

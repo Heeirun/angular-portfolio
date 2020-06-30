@@ -64,13 +64,15 @@
 
     .block {
         padding: 16px 24px;
+        &--mobile {
+            padding: 8px 16px;
+        }
     }
 
     .page {
         padding: 0px 16px 24px;
         min-height: 100%;
         padding-top: 3rem;
-        // margin-top: -3rem;
         background-color: #F5F5F5;
         border: 1px solid black;
 
@@ -83,11 +85,35 @@
             padding-bottom: 48px;
         }
 
+        &--mobile {
+            padding: 16px 0px;
+            padding-top: 4em;
+        }
+
         .about-me {
             width: 100%;
             background-repeat: no-repeat;
             background-image: url('../assets/favicon_io/rsz_heeirun.jpg');
             background-size: 100%;
+            &--mobile {
+                // margin-top: 50px;
+                background-image: url('../assets/favicon_io/rsz_heeirun.jpg');
+                background-position: 0% 23%;
+                 /* Set rules to fill background */
+                min-height: 100%;
+                //min-width: 1024px;
+                    
+                /* Set up proportionate scaling */
+                width: 100%;
+                height: auto;
+                    
+                /* Set up positioning */
+                position: absolute;
+                top: 0;
+                left: 0;
+                justify-content: flex-end;
+                align-items: center;;
+            }
             .info-container {
                 align-self: flex-end;
                 float: right;
@@ -95,6 +121,10 @@
                 padding: 0px;
                 margin-top: 96px;
                 border-radius: 10px;
+                &--mobile {
+                    align-self: center;
+                    max-width: 100%;
+                }
             }
         }
 
@@ -123,6 +153,15 @@
             &--about-me {
                 background-color: #EEEEEE;
             }
+            &--mobile {
+                width: unset;
+                margin-top: 20px;
+                line-height: 1.1;
+                &--about-me {
+                    line-height: 0.9;
+                    text-align: center;
+                }
+            }
             .skills {
                 border-style: groove;
             }
@@ -147,34 +186,34 @@
         }
     }
 }
-@media only screen and (max-width: 1120px) {    
-    .app {
-        line-height: calc(1.7em + 1vw);
-        .page {
-            .about-me {
-                justify-content: flex-end;
-                align-items: unset;
-                //min-height: calc(100% - 300px);
-                .info-container{
-                    align-self: unset;
-                    margin: 0px;
-                    text-align: center;
-                    .link-info {
-                        justify-content: center;
-                    }
-                }
-            }
-            .card {
-                margin-right: 24px;
-            }
-            .work {
-                align-content: center;
-            }
-            .card-container {
-                flex-wrap: wrap;
-                padding-right: 0px;
-                padding-left: 0px;
-            }
-        }
-    }
-}
+// @media only screen and (max-width: 1120px) {    
+//     .app {
+//         line-height: calc(1.7em + 1vw);
+//         .page {
+//             .about-me {
+//                 justify-content: flex-end;
+//                 align-items: unset;
+//                 //min-height: calc(100% - 300px);
+//                 .info-container{
+//                     align-self: unset;
+//                     margin: 0px;
+//                     text-align: center;
+//                     .link-info {
+//                         justify-content: center;
+//                     }
+//                 }
+//             }
+//             .card {
+//                 margin-right: 24px;
+//             }
+//             .work {
+//                 align-content: center;
+//             }
+//             .card-container {
+//                 flex-wrap: wrap;
+//                 padding-right: 0px;
+//                 padding-left: 0px;
+//             }
+//         }
+//     }
+// }
