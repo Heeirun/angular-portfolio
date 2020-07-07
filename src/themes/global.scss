@@ -160,10 +160,15 @@
                 &--about-me {
                     line-height: 0.9;
                     text-align: center;
+                    align-items: center;
                 }
+            }
+            mat-card-content {
+                text-align: justify;
             }
             .skills {
                 border-style: groove;
+                text-align: center;
             }
             a:link {
                 color: black;
@@ -186,34 +191,20 @@
         }
     }
 }
-// @media only screen and (max-width: 1120px) {    
-//     .app {
-//         line-height: calc(1.7em + 1vw);
-//         .page {
-//             .about-me {
-//                 justify-content: flex-end;
-//                 align-items: unset;
-//                 //min-height: calc(100% - 300px);
-//                 .info-container{
-//                     align-self: unset;
-//                     margin: 0px;
-//                     text-align: center;
-//                     .link-info {
-//                         justify-content: center;
-//                     }
-//                 }
-//             }
-//             .card {
-//                 margin-right: 24px;
-//             }
-//             .work {
-//                 align-content: center;
-//             }
-//             .card-container {
-//                 flex-wrap: wrap;
-//                 padding-right: 0px;
-//                 padding-left: 0px;
-//             }
-//         }
-//     }
-// }
+@media only screen and (max-width: 1120px) {    
+    .app {
+        // line-height: calc(1.7em + 1vw);
+        .page {
+            .about-me {
+                justify-content: flex-end;
+                .info-container {
+                    align-self: center;
+                    text-align: center;
+                }
+                .card {
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
